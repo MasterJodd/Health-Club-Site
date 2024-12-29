@@ -72,7 +72,7 @@ export default function Home() {
       >
         <Stars />
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 opacity-80 text-[#22E4AC] uppercase">
-          Benefits Of Our Club
+          benefits of our club
         </h1>
         <VerticalTimeline lineColor="#22E4AC">
           {/* Technology 1 */}
