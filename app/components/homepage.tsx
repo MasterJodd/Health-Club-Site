@@ -60,7 +60,7 @@ export default function Home() {
           </p>
           <div className="hover:scale-110">
           <a href="#benefits" className="mt-20 bg-[#22E4AC] opacity-80 text-black font-bold px-6 py-3 rounded-3xl hover:scale-110 transition-colors">
-            Explore Now
+            Explore More
           </a>
           </div>
         </div>
