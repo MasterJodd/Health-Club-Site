@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+.comet {
+  position: absolute;
+  background: linear-gradient(
+    45deg,
+    rgba(34, 228, 172, 0.3),
+    rgba(121, 40, 202, 0)
+  );
+  border-radius: 50%;
+  filter: blur(4px);
+  pointer-events: none;
+  z-index: 1;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
