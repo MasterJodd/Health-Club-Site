@@ -34,7 +34,7 @@ export default function Comets() {
     const angle = Math.PI / 4;
 
     // Create 3 comets with wider spacing
-    const comets: Comet[] = Array.from({ length: 8 }, (_, index) => ({
+    const comets: Comet[] = Array.from({ length: 20 }, (_, index) => ({
       x: (index * canvas.width) / 2 - 100, // Spread comets across the width
       y: -20,
       size: 2.5, // Consistent size
@@ -44,7 +44,7 @@ export default function Comets() {
     }));
 
     let lastTime = 0;
-    const interval = 4000; // 8 seconds between comet groups
+    const interval = 8000; // 8 seconds between comet groups
 
     function drawComet(comet: Comet) {
       if (!ctx || !comet.active) return;
@@ -57,8 +57,8 @@ export default function Comets() {
         comet.y - tailLength * Math.sin(angle)
       );
 
-      gradient.addColorStop(0, "rgba(34, 228, 172, 0.8)");
-      gradient.addColorStop(0.4, "rgba(34, 228, 172, 0.3)");
+      gradient.addColorStop(0, "rgba(0, 255, 255, 0.8)");
+      gradient.addColorStop(0.4, "rgba(0, 255, 255, 0.3)");
       gradient.addColorStop(1, "rgba(121, 40, 202, 0)");
 
       ctx.beginPath();

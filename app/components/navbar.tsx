@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link
           key={link.label}
           href={link.href}
-          className="flex items-center gap-2 text-gray-300 hover:text-[#22E4AC] transition-colors"
+          className="flex items-center gap-2 text-gray-300 hover:scale-105 hover:text-[#00ffff] transition-colors"
           onClick={() => setIsOpen(false)}
         >
           <Icon width={20} height={20} />
@@ -53,7 +53,7 @@ export default function Navbar() {
         <button
           key={link.label}
           onClick={() => handleSectionClick(link.href)}
-          className="flex items-center gap-2 text-gray-300 hover:text-[#22E4AC] transition-colors"
+          className="flex items-center gap-2 text-gray-300 hover:scale-105 hover:text-[#00ffff] transition-colors"
         >
           <Icon width={20} height={20} />
           <span>{link.label}</span>
@@ -69,7 +69,7 @@ export default function Navbar() {
         smooth={true}
         offset={-64}
         duration={500}
-        className="flex items-center gap-2 text-gray-300 hover:text-[#22E4AC] transition-colors cursor-pointer"
+        className="flex items-center gap-2 text-gray-300 hover:105 hover:text-[#00ffff] transition-colors cursor-pointer"
         onClick={() => setIsOpen(false)}
       >
         <Icon width={20} height={20} />
@@ -90,7 +90,7 @@ export default function Navbar() {
           <Link href="/" aria-label="Home">
             <motion.div
               whileHover={{ scale: 1.1 }}
-              className="flex items-center gap-2 text-[#22E4AC] font-bold text-xl"
+              className="flex items-center gap-2 text-[#00ffff] font-bold text-xl"
             >
               <Image src={logo} alt="logo" height={90} width={90} />
             </motion.div>
@@ -104,7 +104,7 @@ export default function Navbar() {
           {/* Mobile Menu */}
           <button
             aria-label="Menu"
-            className="md:hidden text-gray-300 hover:text-[#22E4AC]"
+            className="md:hidden text-gray-300 hover:text-[#00ffff]"
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu size={24} />
